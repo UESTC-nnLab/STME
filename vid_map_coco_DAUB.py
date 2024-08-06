@@ -3,7 +3,7 @@ import os
 import colorsys
 # #from nets.Network import Network
 # from proposed_model.TwoStreamV2_ITSDT import STNetwork
-from SMFNET_model.SMFNET import STNetwork
+from model.STME import STNetwork
 from utils.utils import (cvtColor, get_classes, preprocess_input, resize_image,
                          show_config)
 import numpy as np

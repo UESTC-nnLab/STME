@@ -2,7 +2,7 @@ import json
 import os
 import colorsys
 #from nets.Network import Network
-from SMFNET_model.SMTFNET_IRDST import STNetwork
+from model.STME_IRDST import STNetwork
 # from proposed_model.TwoStreamV2_ITSDT import STNetwork
 # from proposed_model.TwoStreamV2_ITDST_FusionSimpleV1_myencoder import STNetwork
 from utils.utils import (cvtColor, get_classes, preprocess_input, resize_image,
