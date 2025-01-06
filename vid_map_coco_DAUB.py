@@ -45,7 +45,7 @@ class MAP_vid(object):
         #   验证集损失较低不代表mAP较高，仅代表该权值在验证集上泛化性能较好。
         #   如果出现shape不匹配，同时要注意训练时的model_path和classes_path参数的修改
         #--------------------------------------------------------------------------#
-        "model_path"        : 'logs/loss_2024_06_03_01_17_16/ep055-loss1.119-val_loss3.238.pth',#best_epoch_weights.pth',#'/home/work/logs/DAUB_F1_98.09.pth', 
+        "model_path"        : 'logs/DAUB/DAUB.pth',#best_epoch_weights.pth',#'/home/work/logs/DAUB_F1_98.09.pth', 
         "classes_path"      : 'model_data/classes.txt',
         #---------------------------------------------------------------------#
         #   输入图片的大小，必须为32的倍数。

@@ -26,8 +26,8 @@ map_mode            = 0
 #-------------------------------------------------------#
 #   指向了验证集标签与图片路径
 #-------------------------------------------------------#
-cocoGt_path         = 'E://datasets//tiny_detection//ITDST//instances_test2017.json'# '/home/public/ITSDT/instances_test2017.json'
-dataset_img_path    = 'E://datasets//tiny_detection//ITDST'#  '/home/public/ITSDT/'
+cocoGt_path         = '/home/public/ITSDT/instances_test2017.json'
+dataset_img_path    = '/home/public/ITSDT/'
 # cocoGt_path         = '/home/public/IRDST/annotations/instances_test2017.json'
 # dataset_img_path    = '/home/public/IRDST/'
 #-------------------------------------------------------#
@@ -45,7 +45,7 @@ class MAP_vid(object):
         #   验证集损失较低不代表mAP较高，仅代表该权值在验证集上泛化性能较好。
         #   如果出现shape不匹配，同时要注意训练时的model_path和classes_path参数的修改
         #--------------------------------------------------------------------------#
-        "model_path"        : 'logs/ITDST/best_ITDST.pth',#best_epoch_weights.pth',#'/home/work/logs/DAUB_F1_98.09.pth',  loss_2024_05_19_01_36_33_final/ep026-loss2.318-val_loss4.602.pth
+        "model_path"        : 'logs/ITDST/ITDST.pth',#best_epoch_weights.pth',#'/home/work/logs/DAUB_F1_98.09.pth',  loss_2024_05_19_01_36_33_final/ep026-loss2.318-val_loss4.602.pth
         "classes_path"      : 'model_data/classes.txt', 
         #---------------------------------------------------------------------#
         #   输入图片的大小，必须为32的倍数。

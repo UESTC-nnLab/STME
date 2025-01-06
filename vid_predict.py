@@ -10,13 +10,13 @@ import colorsys
 import os
 import time
 # from proposed_model.TwoStreamV7 import STNetwork
-from SMFNET_model import STNetwork
+from model.STME import STNetwork
 import numpy as np
 import torch
 import torch.nn as nn
 from PIL import ImageDraw, ImageFont
 
-from model.SSTNet.Network import Network
+# from model.SSTNet.Network import Network
 
 from utils.utils import (cvtColor, get_classes, preprocess_input, resize_image,
                          show_config)
@@ -98,7 +98,7 @@ class Pred_vid(object):
     #   生成模型
     #---------------------------------------------------#
     def generate(self, onnx=False):
-        self.net    = Network(self.num_classes, num_frame=5)
+        self.net    = STNetwork(self.num_classes, num_frame=5)
         device      = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.net.load_state_dict(torch.load(self.model_path, map_location=device))
         self.net    = self.net.eval()

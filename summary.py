@@ -6,8 +6,8 @@ from thop import clever_format, profile
 from torchsummary import summary
 
 from model.SSTNet.Network import Network
-from SMFNET_model.SMFNET import STNetwork
-from model.ACM import ACMBody
+from model.STME import STNetwork
+from model.acm_net import ACMBody
 from model.RISTD import RISTDBody
 from model.SANet import SANet
 from model.AGPCNet import AGPCBody

@@ -35,12 +35,12 @@ def fit_one_epoch(model_train, model, ema, yolo_loss, loss_history, eval_callbac
             #   前向传播
             #----------------------#
             #pdb.set_trace()
-            outputs, motion_loss        = model_train(images)
+            outputs = model_train(images)
 
             #----------------------#
             #   计算损失
             #----------------------#
-            loss_value = yolo_loss(outputs, targets) + motion_loss
+            loss_value = yolo_loss(outputs, targets) #+ motion_loss
 
             #----------------------#
             #   反向传播

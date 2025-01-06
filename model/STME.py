@@ -399,9 +399,9 @@ class STNetwork(nn.Module):
         feat_all=self.feature_fusion([feat_all1,feat_all2,feat_all3])#[b,c,h,w]
         feat.append(feat_all)
         outputs  = self.head(feat)
-        motion_loss=0
+        # motion_loss=0
         if self.training:
-            return  outputs, motion_loss  
+            return  outputs#, motion_loss  
         else:
             return  outputs
         
