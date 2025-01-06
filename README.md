@@ -1,7 +1,7 @@
 # STMENet
 The Pytorch implementation of the our paper of UESTC-nnLab [**Moving Infrared Dim and Small Target Detection by
 Spatio-temporal Mixed Encoding**]
-![outline](./readme/method.png)
+![outline](./readme/framework5.jpg)
 
 ## Abstract
 Infrared dim and small target detection has become a challenging and hot topic
