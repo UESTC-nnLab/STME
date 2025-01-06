@@ -33,7 +33,7 @@ CUDA_VISIBLE_DEVICES=0 python vid_map_ITDST_single.py
 ```
 ## Results
 
-- PR curve on DAUB and IRDST datasets.
+- PR curve on ITSDT-15K and IRDST datasets.
 - We provide the results on [ITSDT-15K](./readme/ITDST_results) and [IRDST](./readme/IRDST_results), and you can plot them using Python.
 
 <img src="/readme/ITSDT_PR.jpg" width="500px">
