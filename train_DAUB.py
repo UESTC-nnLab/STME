@@ -13,10 +13,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 import pycocotools.coco as coco
 
-#from nets.Network import Network
-# from proposed_model.TwoStreamV2_ITSDT import STNetwork
 from model.STME import STNetwork
-# from proposed_model.TwoStreamV7 import STNetwork  ## IRDST_model
 from model.nets.yolo_training import (ModelEMA, YOLOLoss, get_lr_scheduler,
                                 set_optimizer_lr, weights_init)
 from utils.callbacks import EvalCallback, LossHistory

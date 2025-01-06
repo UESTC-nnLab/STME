@@ -52,7 +52,7 @@ class MAP_vid(object):
         #   如果出现shape不匹配，同时要注意训练时的model_path和classes_path参数的修改
         #--------------------------------------------------------------------------#
         #loss_2024_05_27_20_38_02/ep022-loss3.197-val_loss3.333.pth'
-        "model_path"        : 'logs/IRDST/IRDST.pth',#'/home/work/logs/DAUB_F1_98.09.pth',s_2024_06_01_15_03_19/ep020-loss3.276-val_loss3.286.pth',#best_epoch_weights.pth',#'/home/work/logs/DAUB_F1_98.09.pth', 
+        "model_path"        : 'logs/IRDST/IRDST.pth',
         "classes_path"      : 'model_data/classes.txt',
         #---------------------------------------------------------------------#
         #   输入图片的大小，必须为32的倍数。
