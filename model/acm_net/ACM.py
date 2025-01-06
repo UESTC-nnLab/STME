@@ -48,9 +48,9 @@ class ACMHead(nn.Module):
         outputs.append(output)
         
         return outputs
-
+import pdb
 class ACMBody(nn.Module):
-    def __init__(self, num_classes, phi):
+    def __init__(self, num_classes=1, phi='s'):
         super().__init__()
         # self.backbone = ASKCResNetFPN()
         self.backbone = ASKCResUNet()
@@ -66,12 +66,12 @@ class ACMBody(nn.Module):
         b, _, _, _ = x.shape  # 2, 3, 512, 512
         x = self.backbone(x)  # [2, 1, 512, 512]
         # print(x.shape)
-        
+        pdb.set_trace()
         # x = x.view(b, 64, 80, 80)
-        # x = self.conv(x)
+        x = self.conv(x) 
        
-        # outputs = self.head(x)
-        return x
+        outputs = self.head(x)
+        return outputs
 
 if __name__ == "__main__":
     a = torch.rand([4, 3, 640, 640])

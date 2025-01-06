@@ -49,7 +49,7 @@ class RPCAHead(nn.Module):
         return outputs
 
 class RPCABody(nn.Module):
-    def __init__(self, num_classes, phi):
+    def __init__(self, num_classes=1, phi='s'):
         super().__init__()
         # self.backbone = ASKCResNetFPN()
         self.backbone = RPCANet()
